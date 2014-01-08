@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Simple-Tabs Demo Page</title>
+    
+    <!-- Dependencies -->
+    
+    <!-- link to hosted jquery library (Simple-Tabs requires jQuery to function)-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    <!-- basic css required -->
+    <link rel="stylsheet" src="default.css">
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <!-- Don't forget to link to the Simple-Tab library-->
+    <script src="simple-tabs.js"></script>
+    
+    <!-- this is an example stylesheet It is not required for you tabs to work
+         but use is as a jumping off point to style your tabbed view 
+    -->
+    <link rel="stylesheet" type="text/css" href="demo.css">
+    
+    <script>
+        /*Initialize the tabs in a document ready to ensure
+         *the page is drawn when you init
+         */
+        $( document ).ready(function () {
+            
+            //pass it to the tab library
+            var demoTabs = new SimpleTabs($('#demo-tabs'));
+        });
+    </script>
+    
+</head>
+
+<body>
+<div class="outer-wrap">
+    
+    <h2>Simple-Tabs</h2>
+    <p>Simple tabs is designed to be a quick and easy solution for tabbed content on a web page.
+    It is compact, intuitive and light weight.  Best of all it can be initialized in one line of code.</p>
+    <p>Simple-Tabs is dependent on jQuery and a small css and js file.</p>
+    <p>We are not using the href="#some-hash" convention so the library is not likely to interfere with site navigation in
+    single page apps</p>
+    <ul class="simple-tabs" id="demo-tabs">
+        <li class="info active">Info</li>
+        <li class="images">Images</li>
+        <li class="recipes">Recipes</li>
+    </ul>
+    <div class="clear-float"></div>
+    
+    <div id="info" class="tab-page active-page">
+        <div class="ninety-percent-pad">
+            Pork pastrami ground round t-bone. Brisket swine doner rump meatball bacon.
+            Shankle tri-tip pork belly jerky venison chicken chuck tongue hamburger andouille kevin.
+            Flank frankfurter rump shankle brisket hamburger, shank short ribs pork loin tail
+            andouille swine ribeye leberkas. Pork biltong shank venison, jerky tongue sirloin
+            boudin tenderloin corned beef. Short ribs cow ham hock, meatloaf jerky pork chop pork
+            belly flank hamburger shoulder filet mignon. Meatloaf tri-tip meatball ribeye.
+            
+            <a href="http://baconipsum.com/"><h4>Ipsum courtesy of BaconIpsum.com</h4></a>
+        </div>
+    </div>
+    
+    <div id="images" class="tab-page">
+        <div class="ninety-percent-pad">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Schweinebauch-1.jpg/800px-Schweinebauch-1.jpg" width="100%" height="auto">
+        </div>
+    </div>
+    
+    <div id="recipes" class="tab-page">
+        <div class="ninety-percent-pad">
+            <p>Step 1: fry bacon</p>
+            <p>Step 2: eat bacon</p>
+            <p>Step 3: repeat</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

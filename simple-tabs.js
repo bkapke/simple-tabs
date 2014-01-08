@@ -18,7 +18,7 @@ var SimpleTabs = function (elem) {
                 $(activeTabObject.pane).removeClass('active-page');
                 $(activeTabObject.tab).removeClass('active');
                 $(self.pane).addClass('active-page');
-                $(self.tab).addClass('active')
+                $(self.tab).addClass('active');
                 activeTabObject = self;
             }
         };
@@ -28,13 +28,13 @@ var SimpleTabs = function (elem) {
     $.each(elem.children(), function (id,val){
         var tab = new TabObject();
         tab.tab = val;
-        var classString = $(val).attr('class')
+        var classString = $(val).attr('class');
         var className = classString.split(' ')[0];
         tab.pane = $('#' + className);
         tab.setClick();
         if (classString.indexOf('active') > -1) {
             activeTabObject = tab;
         }
-    })
+    });
     
-}
+};

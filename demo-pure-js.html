@@ -2,34 +2,23 @@
 
 <html>
 <head>
-    <title>Simple-Tabs Demo Page</title>
-    
-    <!-- Dependencies -->
-    
-    <!-- link to hosted jquery library (Simple-Tabs requires jQuery to function)-->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    
+    <title>Simple-Tabs Demo Page</title>    
     <!-- basic css required -->
     <link rel="stylsheet" src="default.css">
     <link rel="stylesheet" type="text/css" href="default.css">
     <!-- Don't forget to link to the Simple-Tab library-->
-    <script src="simple-tabs.min.js"></script>
-    <script src="simple-tabs.js"></script>
+    <!--<script src="simple-tabs-pure-js.js"></script>-->
+    <script src="simple-tabs-pure-js.min.js"></script>
     
     <!-- this is an example stylesheet It is not required for you tabs to work
          but use is as a jumping off point to style your tabbed view 
     -->
     <link rel="stylesheet" type="text/css" href="demo.css">
     
-    <script>
-        /*Initialize the tabs in a document ready to ensure
-         *the page is drawn when you init
-         */
-        $( document ).ready(function () {
-            //pass it to the tab library
-            var demoTabs = new SimpleTabs($('#demo-tabs'));
-        });
-        
+    <script>        
+        window.onload = function() {
+            var demoTabs = new SimpleTabs(document.getElementById('demo-tabs'));
+        };
     </script>
     
 </head>
@@ -37,7 +26,7 @@
 <body>
 <div class="outer-wrap">
     
-    <h2>Simple-Tabs (Using jQuery)</h2>
+    <h2>Simple-Tabs (No jQuery Required)</h2>
     <p>Simple tabs is designed to be a quick and easy solution for tabbed content on a web page.
     It is compact, intuitive and light weight.  Best of all it can be initialized in one line of code.</p>
     <p>Simple-Tabs is dependent on jQuery and a small css and js file.</p>

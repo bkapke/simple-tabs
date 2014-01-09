@@ -59,4 +59,6 @@ For your content
     I am the first tab
 </div>
 
+This should provide a basic demo of the library.  See readme-test.html.
+
 

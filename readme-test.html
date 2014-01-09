@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    
+    <!-- link to hosted jquery library (Simple-Tabs requires jQuery to function)-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="default.css">
+    
+    <script src="simple-tabs.min.js"></script>
+    
+    <script>
+        /*Initialize the tabs in a document ready to ensure
+         *the page is drawn when you init
+         */
+        $( document ).ready(function () {
+            //pass it to the tab library
+            var exampleTabs = new SimpleTabs($('#example-tabs'));
+        });
+        
+    </script>
+    
+</head>
+
+<body>
+
+    <ul class="simple-tabs" id="example-tabs">
+        <li class="tab-one active">Tab 1</li>
+        <li class="tab-two">Tab 2</li>
+        <li class="tab-three">Tab 3</li>
+    </ul>
+
+    <div id="tab-one" class="tab-page active-page">
+        I am the first tab
+    </div>
+    
+    <div id="tab-two" class="tab-page">
+        I am the second tab
+    </div>
+    
+    <div id="tab-three" class="tab-page">
+        I am the third tab
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    
+    
+    <script src="js/simple-tabs-pure-js.min.js"></script>
+    
+    <script>
+        /*
+         * Initialize the tabs on window to ensure the page is drawn when you init,
+         * you may also move the script tags to the end of the body to ensure the element is present when the
+         * plugin is called.
+         */
+        window.onload = function () {
+            var div = document.getElementById('example-tabs');
+            var exampleTabs = new SimpleTabs(div);
+        };
+        
+    </script>
+    
+</head>
+
+<body>
+    <p>This is simply a basic implementation of the library.  Click the tab names and the paragraph below will change.</p>
+    <ul class="simple-tabs" id="example-tabs">
+        <li class="tab-one active">Tab 1</li>
+        <li class="tab-two">Tab 2</li>
+        <li class="tab-three">Tab 3</li>
+    </ul>
+
+    <div id="tab-one" class="tab-page active-page">
+        I am the first tab
+    </div>
+    
+    <div id="tab-two" class="tab-page">
+        I am the second tab
+    </div>
+    
+    <div id="tab-three" class="tab-page">
+        I am the third tab
+    </div>
+</body>
+</html>

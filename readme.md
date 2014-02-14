@@ -8,6 +8,8 @@ Simple Tabs us a basic tabbed navigation library. Use it to toggle
 content in a div and style it however you like!  Simple tabs does not require the
 menu to be a part of the content so your free to put the tabs wherever to like in the document.
 
+[View Demo](http://yourshoesuntied.com/simple-tabs-demo/)
+
 ##jQuery Initialization
 
 >Use the hosted jQuery library or provide a valid link to jQuery in your source
